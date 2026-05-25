@@ -20,7 +20,7 @@ El objetivo de esta web es tener un espacio centralizado donde mostrar mi perfil
 ## 📸 Vista previa
 
 Puedes ver la web en funcionamiento aquí:
-[mgisbert](https://mgisbert.com/)
+[https://mgisbert.com/](https://mgisbert.com/)
 
 ## 📂 Estructura del proyecto
 
@@ -46,9 +46,9 @@ Durante el desarrollo de este proyecto he trabajado en:
 
 ## 📬 Contacto
 
-- Web: [mgisbert](https://mgisbert.com/)
+- Web: [https://mgisbert.com](https://mgisbert.com/)
 - Email: miguelgisbert12@gmail.com
-- GitHub: [miguelgisbert12](https://github.com/miguelgisbert12)
+- GitHub: [https://github.com/miguelgisbert12](https://github.com/miguelgisbert12)
 
 ---
 
