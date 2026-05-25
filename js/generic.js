@@ -138,6 +138,8 @@ if(window.location.pathname.includes("sobre_mi")) {
     const figma_link = document.getElementById("figma_link");
     const filmora_link = document.getElementById("filmora_link");
     const imovie_link = document.getElementById("imovie_link");
+    const git_link = document.getElementById("git_link");
+    const github_link = document.getElementById("github_link");
 
     btn_proyectos.addEventListener("click", () => {
         window.location.href = "../pages/proyectos.html";
@@ -173,6 +175,14 @@ if(window.location.pathname.includes("sobre_mi")) {
 
     imovie_link.addEventListener("click", () => {
         window.open("https://apps.apple.com/es/app/imovie/id377298193");
+    });
+
+    git_link.addEventListener("click", () => {
+        window.open("https://git-scm.com/about");
+    });
+
+    github_link.addEventListener("click", () => {
+        window.open("https://github.com/about");
     });
 };
 
