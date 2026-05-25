@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miguel Gisbert - Proyectos</title>
+
+    <link rel="icon" type="image/png" href="../favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="../favicon/favicon.svg" />
+    <link rel="shortcut icon" href="../favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Miguel Gisbert" />
+    <link rel="manifest" href="../favicon/site.webmanifest" />
+
+    <link rel="stylesheet" href="../css/generic.css">
+</head>
+
+<body>
+    <header>
+        
+        <img class="header_logo" src="../media/logo_white.png" alt="header_logo">
+
+        <div class="hamburguer_box off">
+            <img class="hamburguer_menu" src="../media/menu_hamburguesa.png" alt="hamburguer_menu">
+        </div>
+       
+        <nav class="menu_header">
+            <a class="nav_link white" href="../index.html">
+                <span class="sign">&lt;</span>
+                <span class="text_plain">inicio</span>
+                <span class="sign">&gt;</span>
+            </a>
+            <a class="nav_link white" href="../pages/sobre_mi.html">
+                <span class="sign">&lt;</span>
+                <span class="text_plain">sobre mí</span>
+                <span class="sign">&gt;</span>
+            </a>
+            <a class="nav_link white selected active" href="../pages/proyectos.html">
+                <span class="sign">&lt;</span>
+                <span class="text_plain">proyectos</span>
+                <span class="sign">&gt;</span>
+            </a>
+            <a class="nav_link white" href="../pages/curriculum.html">
+                <span class="sign">&lt;</span>
+                <span class="text_plain">currículum</span>
+                <span class="sign">&gt;</span>
+            </a>
+            <a class="nav_link white" href="../pages/contacto.html">
+                <span class="sign">&lt;</span>
+                <span class="text_plain">contacto</span>
+                <span class="sign">&gt;</span>
+            </a>
+        </nav>
+
+        <div class="hamburguer_overlay">
+
+            <img class="overlay_logo" src="../media/logo_white.png" alt="header_logo">
+
+            <nav class="menu_responsive">
+                <a class="nav_link white" href="../index.html">
+                    <span class="sign">&lt;</span>
+                    <span class="text_plain">inicio</span>
+                    <span class="sign">&gt;</span>
+                </a>
+                <a class="nav_link white" href="../pages/sobre_mi.html">
+                    <span class="sign">&lt;</span>
+                    <span class="text_plain">sobre mí</span>
+                    <span class="sign">&gt;</span>
+                </a>
+                <a class="nav_link white selected active" href="../pages/proyectos.html">
+                    <span class="sign">&lt;</span>
+                    <span class="text_plain">proyectos</span>
+                    <span class="sign">&gt;</span>
+                </a>
+                <a class="nav_link white" href="../pages/curriculum.html">
+                    <span class="sign">&lt;</span>
+                    <span class="text_plain">currículum</span>
+                    <span class="sign">&gt;</span>
+                </a>
+                <a class="nav_link white" href="../pages/contacto.html">
+                    <span class="sign">&lt;</span>
+                    <span class="text_plain">contacto</span>
+                    <span class="sign">&gt;</span>
+                </a>
+            </nav>
+
+            <div class="overlay_social">
+                <a class="logo_social_overlay logo_linkedin" href="https://www.linkedin.com/in/miguelgisbertrobert" target="_blank" rel="noopener noreferrer">
+                    <img src="../media/logo_linkedin.png" alt="logo_linkedin">
+                </a>
+                <a class="logo_social_overlay logo_instagram" href="https://www.instagram.com/miguelgisbert12/" target="_blank" rel="noopener noreferrer">
+                    <img src="../media/logo_instagram.png" alt="logo_instagram">
+                </a>
+            </div>
+        </div>
+
+        <div class="header_social">
+            <a class="logo_social_header logo_linkedin" href="https://www.linkedin.com/in/miguelgisbertrobert" target="_blank" rel="noopener noreferrer">
+                <img src="../media/logo_linkedin.png" alt="logo_linkedin">
+            </a>
+            <a class="logo_social_header logo_instagram" href="https://www.instagram.com/miguelgisbert12/" target="_blank" rel="noopener noreferrer">
+                <img src="../media/logo_instagram.png" alt="logo_instagram">
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <div class="centered">
+            <section id="projects_main_section">
+                <section id="block_title_projects">
+                    <h3>TODOS MIS</h3>
+                    <div id="title_projects">
+                        <h2>PROYECTOS</h2>
+                    </div>
+                    
+                    <div id="filters_box">
+                        <button>WEB</button>
+                        <button>VIDEO</button>
+                        <button>UX-UI</button>
+                    </div>
+                </section>
+
+                <div class="order_box">
+                    <div class="decoration_lines_box">
+                        <hr class="long_line">
+                        <hr class="medium_line">
+                        <hr class="short_line">
+                    </div>
+
+                    <div id="order_by">
+                        <p>Ordenar por:</p>
+                        <div id="accordion_buttons">
+                            <div id="button_recent" class="accordion_button order_selected">
+                                <h4>Más recientes primero</h4>
+                                <img class="arrow_accordion" src="../media/down_arrow.png" alt="icon_arrow">
+                            </div>
+
+                            <div id="button_older" class="accordion_button">
+                                <h4>Más antiguos primero</h4>
+                                <img class="arrow_accordion" src="../media/down_arrow.png" alt="icon_arrow">
+                            </div>
+
+                            <div id="button_alphabetic" class="accordion_button">
+                                <h4>Orden alfabético</h4>
+                                <img class="arrow_accordion" src="../media/down_arrow.png" alt="icon_arrow">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects">
+                <h3 id="shown_projects">Mostrando 0 de 2 proyectos</h3>
+
+                <div id="projects_schema">
+
+                    <div class="project_box" data-date="2025-08" data-tags="web" data-name="mg">
+                        <div class="img_frame">
+                            <img src="../media/mg.png" alt="mg">
+                        </div>
+
+                        <div class="info_project_box">
+                            <h4 class="project_title">Miguel Gisbert</h4>
+                            <p class="date white">08/2025</p>
+                            <div class="tag_box">
+                                <div class="tag">
+                                    <p>Web</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project_box" data-date="2025-04" data-tags="web" data-name="ludofy">
+                        <div class="img_frame">
+                            <img src="../media/ludofy.png" alt="ludofy">
+                        </div>
+
+                        <div class="info_project_box">
+                            <h4 class="project_title">Ludofy</h4>
+                            <p class="date white">04/2025</p>
+                            <div class="tag_box">
+                                <div class="tag">
+                                    <p>Web</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project_box" data-date="2024-11" data-tags="ux-ui" data-name="skill_swap">
+                        <div class="img_frame">
+                            <img src="../media/skill_swap.png" alt="skill_swap">
+                        </div>
+
+                        <div class="info_project_box">
+                            <h4 class="project_title">Skill Swap</h4>
+                            <p class="date white">11/2024</p>
+                            <div class="tag_box">
+                                <div class="tag">
+                                    <p>UX-UI</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project_box" data-date="2024-09" data-tags="web,ux-ui" data-name="new_horizons">
+                        <div class="img_frame">
+                            <img src="../media/new_horizons.png" alt="new_horizons">
+                        </div>
+
+                        <div class="info_project_box">
+                            <h4 class="project_title">New Horizons</h4>
+                            <p class="date white">09/2024</p>
+                            <div class="tag_box">
+                                <div class="tag">
+                                    <p>Web</p>
+                                </div>
+                                <div class="tag">
+                                    <p>UX-UI</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project_box" data-date="2024-04" data-tags="video" data-name="llibreria_xativa">
+                        <div class="img_frame">
+                            <img src="../media/llibreria_xativa.png" alt="llibreria_xativa">
+                        </div>
+
+                        <div class="info_project_box">
+                            <h4 class="project_title">Llibreria Xàtiva</h4>
+                            <p class="date white">04/2024</p>
+                            <div class="tag_box">
+                                <div class="tag">
+                                    <p>Vídeo</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project_box" data-date="2024-04" data-tags="video" data-name="festival_literari_carcaixent">
+                        <div class="img_frame">
+                            <img src="../media/festival_carcaixent.jpg" alt="festival_carcaixent">
+                        </div>
+
+                        <div class="info_project_box">
+                            <h4 class="project_title">Festival Literari de Carcaixent</h4>
+                            <p class="date white">04/2024</p>
+                            <div class="tag_box">
+                                <div class="tag">
+                                    <p>Vídeo</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project_box" data-date="2020-10" data-tags="video" data-name="visual_studio">
+                        <div class="img_frame">
+                            <img src="../media/visual_studio.png" alt="visual_studio">
+                        </div>
+
+                        <div class="info_project_box">
+                            <h4 class="project_title">Visual Studio</h4>
+                            <p class="date white">10/2020</p>
+                            <div class="tag_box">
+                                <div class="tag">
+                                    <p>Vídeo</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+        </div>
+
+        <div id="arrow_up">
+            <img class="arrowup" src="../media/up_arrow.png" alt="arrow_up">
+            <img class="arrowup_visible" src="../media/up_arrow.png" alt="arrow_up">
+        </div>
+        
+    </main>
+
+    <footer>
+        <div class="footer_info">
+            <p><span class="poppins_regular">© Mg 2025</span> Miguel Gisbert Robert</p>
+        </div>
+
+        <nav class="menu_footer">
+            <a class="nav_link_footer" href="../index.html">inicio</a>
+            <a class="nav_link_footer" href="../pages/sobre_mi.html">sobre mí</a>
+            <a class="nav_link_footer" href="../pages/proyectos.html">proyectos</a>
+            <a class="nav_link_footer" href="../pages/curriculum.html">currículum</a>
+            <a class="nav_link_footer" href="../pages/contacto.html">contacto</a>
+        </nav>
+    </footer>
+
+    <script src="../js/generic.js"></script>
+</body>
+
+</html>

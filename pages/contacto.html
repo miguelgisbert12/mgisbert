@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miguel Gisbert - Contacto</title>
+
+    <link rel="icon" type="image/png" href="../favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="../favicon/favicon.svg" />
+    <link rel="shortcut icon" href="../favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Miguel Gisbert" />
+    <link rel="manifest" href="../favicon/site.webmanifest" />
+
+    <link rel="stylesheet" href="../css/generic.css">
+</head>
+
+<body>
+    <header>
+        
+        <img class="header_logo" src="../media/logo_white.png" alt="header_logo">
+
+        <div class="hamburguer_box off">
+            <img class="hamburguer_menu" src="../media/menu_hamburguesa.png" alt="hamburguer_menu">
+        </div>
+       
+        <nav class="menu_header">
+            <a class="nav_link white" href="../index.html">
+                <span class="sign">&lt;</span>
+                <span class="text_plain">inicio</span>
+                <span class="sign">&gt;</span>
+            </a>
+            <a class="nav_link white" href="../pages/sobre_mi.html">
+                <span class="sign">&lt;</span>
+                <span class="text_plain">sobre mí</span>
+                <span class="sign">&gt;</span>
+            </a>
+            <a class="nav_link white" href="../pages/proyectos.html">
+                <span class="sign">&lt;</span>
+                <span class="text_plain">proyectos</span>
+                <span class="sign">&gt;</span>
+            </a>
+            <a class="nav_link white" href="../pages/curriculum.html">
+                <span class="sign">&lt;</span>
+                <span class="text_plain">currículum</span>
+                <span class="sign">&gt;</span>
+            </a>
+            <a class="nav_link white selected active" href="../pages/contacto.html">
+                <span class="sign">&lt;</span>
+                <span class="text_plain">contacto</span>
+                <span class="sign">&gt;</span>
+            </a>
+        </nav>
+
+        <div class="hamburguer_overlay">
+
+            <img class="overlay_logo" src="../media/logo_white.png" alt="header_logo">
+
+            <nav class="menu_responsive">
+                <a class="nav_link white" href="../index.html">
+                    <span class="sign">&lt;</span>
+                    <span class="text_plain">inicio</span>
+                    <span class="sign">&gt;</span>
+                </a>
+                <a class="nav_link white" href="../pages/sobre_mi.html">
+                    <span class="sign">&lt;</span>
+                    <span class="text_plain">sobre mí</span>
+                    <span class="sign">&gt;</span>
+                </a>
+                <a class="nav_link white" href="../pages/proyectos.html">
+                    <span class="sign">&lt;</span>
+                    <span class="text_plain">proyectos</span>
+                    <span class="sign">&gt;</span>
+                </a>
+                <a class="nav_link white" href="../pages/curriculum.html">
+                    <span class="sign">&lt;</span>
+                    <span class="text_plain">currículum</span>
+                    <span class="sign">&gt;</span>
+                </a>
+                <a class="nav_link white selected active" href="../pages/contacto.html">
+                    <span class="sign">&lt;</span>
+                    <span class="text_plain">contacto</span>
+                    <span class="sign">&gt;</span>
+                </a>
+            </nav>
+
+            <div class="overlay_social">
+                <a class="logo_social_overlay logo_linkedin" href="https://www.linkedin.com/in/miguelgisbertrobert" target="_blank" rel="noopener noreferrer">
+                    <img src="../media/logo_linkedin.png" alt="logo_linkedin">
+                </a>
+                <a class="logo_social_overlay logo_instagram" href="https://www.instagram.com/miguelgisbert12/" target="_blank" rel="noopener noreferrer">
+                    <img src="../media/logo_instagram.png" alt="logo_instagram">
+                </a>
+            </div>
+        </div>
+
+        <div class="header_social">
+            <a class="logo_social_header logo_linkedin" href="https://www.linkedin.com/in/miguelgisbertrobert" target="_blank" rel="noopener noreferrer">
+                <img src="../media/logo_linkedin.png" alt="logo_linkedin">
+            </a>
+            <a class="logo_social_header logo_instagram" href="https://www.instagram.com/miguelgisbert12/" target="_blank" rel="noopener noreferrer">
+                <img src="../media/logo_instagram.png" alt="logo_instagram">
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <div class="centered guided">
+            <section id="contact_section">
+                <section id="block_title_contact">
+                    <h3>¿HABLAMOS?</h3>
+                    <div id="title_contact">
+                        <h2>CONTACTO</h2>
+                    </div>
+                </section>
+
+                <div id="order_box_contact" class="order_box">
+                    <div id="contact_lines" class="decoration_lines_box">
+                        <hr class="long_line">
+                        <hr class="medium_line">
+                        <hr class="short_line">
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact_main">
+                <h3>
+                    Colaboraciones, ofertas, proyectos freelance, diseños... ¡Escríbeme! <br><br>
+                    Rellena el formulario y me pondré en contacto contigo lo antes posible.
+                </h3>
+
+                <div id="contact_main_row">
+                    <form id="contact_form" novalidate netlify>
+
+                        <div class="form_box">
+
+                            <div class="form_row">
+                                <label for="cf_name">Nombre *</label>
+                                <input type="text" name="name" id="cf_name" required autocomplete="name" placeholder="Tu nombre">
+                                <p class="error" id="err_name" aria-live="polite"></p>
+                            </div>
+
+                            <div class="form_row">
+                                <label for="cf_subject">Asunto *</label>
+                                <input type="text" name="subject" id="cf_subject" required placeholder="Asunto del mensaje">
+                                <p class="error" id="err_subject" aria-live="polite"></p>
+                            </div>
+
+                        </div>
+
+                        <div class="form_box">
+
+                            <div class="form_row">
+                                <label for="cf_email">Correo electrónico *</label>
+                                <input type="email" name="email" id="cf_email" required autocomplete="email" inputmode="email" placeholder="tu@email.com">
+                                <p class="error" id="err_email" aria-live="polite"></p>
+                            </div>
+
+                            <div class="form_row">
+                                <label for="cf_phone">Teléfono (opcional)</label>
+                                <input type="tel" name="phone" id="cf_phone" autocomplete="tel" inputmode="tel" placeholder="+34 666 666 666" pattern="^[0-9+()\-.\s]{6,}$">
+                                <p class="error" id="err_phone" aria-live="polite"></p>
+                            </div>
+
+                        </div>
+
+                        <div class="form_row">
+                            <label for="cf_message">Mensaje *</label>
+                            <textarea name="message" id="cf_message" rows="6" required placeholder="Escribe aquí tu mensaje..."></textarea>
+                            <p class="error" id="err_message" aria-live="polite"></p>
+                        </div>
+
+                        <button type="submit" id="cf_submit">
+                            <span>Enviar</span>
+                        </button>
+
+                        <p class="form_feedback" id="cf_feedback" aria-live="polite"></p>
+
+                    </form>
+
+                    <img id="logo_black_big" src="../media/logo_black_smoothed.png" alt="logo_mg">
+                </div>
+
+                
+            </section>
+        </div>
+
+        <div id="arrow_up">
+            <img class="arrowup" src="../media/up_arrow.png" alt="arrow_up">
+            <img class="arrowup_visible" src="../media/up_arrow.png" alt="arrow_up">
+        </div>
+        
+    </main>
+
+    <footer>
+        <div class="footer_info">
+            <p><span class="poppins_regular">© Mg 2025</span> Miguel Gisbert Robert</p>
+        </div>
+
+        <nav class="menu_footer">
+            <a class="nav_link_footer" href="../index.html">inicio</a>
+            <a class="nav_link_footer" href="../pages/sobre_mi.html">sobre mí</a>
+            <a class="nav_link_footer" href="../pages/proyectos.html">proyectos</a>
+            <a class="nav_link_footer" href="../pages/curriculum.html">currículum</a>
+            <a class="nav_link_footer" href="../pages/contacto.html">contacto</a>
+        </nav>
+    </footer>
+
+    <script src="../js/generic.js"></script>
+</body>
+
+</html>
