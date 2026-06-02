@@ -600,17 +600,34 @@ if(window.location.pathname.includes("mg.html")) {
 
     const btn_prototype_figma = document.getElementById("btn_prototype_figma");
     const btn_access = document.getElementById("btn_access");
-    const btn_access2 = document.getElementById("btn_access2");
 
     btn_prototype_figma.addEventListener("click", () => {
         window.open("https://www.figma.com/design/X6g6aMgyiWvaNnUhSc8hBp/Portfolio?node-id=0-1&t=Wn1tmeNL9xbhvpgf-1");
     });
 
     btn_access.addEventListener("click", () => {
-        window.open("https://miguelgisbert.netlify.app/");
+        window.open("https://mgisbert.com");
+    });
+};
+
+// Proyecto Welcome to Helea
+// ---------------------------------------------------------------------------
+
+if(window.location.pathname.includes("welcome_to_helea.html")) {
+
+    const btn_access = document.getElementById("btn_access");
+    const btn_access2 = document.getElementById("btn_access2");
+    const btn_code_github = document.getElementById("btn_code_github");
+
+    btn_access.addEventListener("click", () => {
+        window.open("https://welcome-to-helea-game.netlify.app/");
     });
 
     btn_access2.addEventListener("click", () => {
-        window.open("https://miguelgisbert.netlify.app/");
+        window.open("https://welcome-to-helea-game.netlify.app/");
+    });
+
+    btn_code_github.addEventListener("click", () => {
+        window.open("https://github.com/miguelgisbert12/welcome-to-helea");
     });
 };

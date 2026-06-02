@@ -19,6 +19,14 @@
     background-color: white;
 }
 
+.purple {
+    color: #e072ff;
+}
+
+.purple_background {
+    background-color: #45FFF6;
+}
+
 .blue {
     color: #45FFF6;
 }
@@ -208,6 +216,22 @@ ul, ol {
 
 .off {
     display: none !important;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.active_small {
+    display: none;
 }
 
 /* CSS común en todas las páginas */
@@ -662,6 +686,10 @@ footer a:hover {
     font-size: 22px;
 }
 
+#title_mg h1 {
+    font-size: 100px;
+}
+
 #block_about #title_mg {
     line-height: 1.0;
     margin: 10px 0px 70px 30px;
@@ -1076,7 +1104,7 @@ footer a:hover {
     width: 50%;
 }
 
-#block_title_projects h2 {
+#block_title_projects h1 {
     font-family: 'Poppins_light', sans-serif;
     font-size: 100px;
     overflow: hidden;
@@ -1283,7 +1311,7 @@ footer a:hover {
     width: 50%;
 }
 
-#block_title_curriculum h2 {
+#block_title_curriculum h1 {
     font-family: 'Poppins_light', sans-serif;
     font-size: 100px;
     overflow: hidden;
@@ -1508,7 +1536,7 @@ footer a:hover {
     width: 50%;
 }
 
-#block_title_contact h2 {
+#block_title_contact h1 {
     font-family: 'Poppins_light', sans-serif;
     font-size: 100px;
     overflow: hidden;
@@ -1782,6 +1810,16 @@ footer a:hover {
     color: white;
 }
 
+.list_description {
+    list-style: circle !important;
+    color: white;
+    padding-left: 20px;
+}
+
+.list_description li {
+    color: white;
+}
+
 .wprocess_project div {
     display: flex;
     gap: 30px;
@@ -1792,6 +1830,10 @@ footer a:hover {
     font-size: 36px;
     color: white;
     overflow: visible;
+}
+
+.wprocess_project div h3 {
+    color: white;
 }
 
 .section_content {
@@ -2223,6 +2265,52 @@ footer a:hover {
     color: white;
 }
 
+/* CSS Welcome to Helea */
+/* ---------------------------------------------------------------------------- */
+
+#header_wth {
+    background-image: url("../media/wth_background.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    padding: 200px 0px 200px 200px;
+}
+
+.info_text {
+    text-align: center;
+}
+
+#content_wth {
+    background-image: url("../media/fondo_wth.png");
+}
+
+#tags_box_wth div {
+    border-color: #ffffff;
+}
+
+#tags_box_wth h3 {
+    color: #ffffff;
+}
+
+#buttons_wth button, .btn_wth {
+    color: #1A1A1A;
+    border-color: #1A1A1A;
+    background-color: white;
+}
+
+#buttons_wth button:hover, .btn_wth:hover {
+    background-color: #1A1A1A;
+    color: #e072ff;
+    box-shadow: 0 6px 16px rgba(249, 112, 249, 0.5);
+}
+
+#studies_wth div {
+    border-color: #e072ff;
+}
+
+#programmes_wth div h4 {
+    color: white;
+}
 
 /* Media Queries */
 /* ---------------------------------------------------------------------------- */
@@ -2330,11 +2418,11 @@ footer a:hover {
         display: block !important;
     }
 
-    #title_mg h2 {
+    #title_mg h1 {
         font-size: 65px !important;
     }
 
-    #title_projects h2 {
+    #title_projects h1 {
         font-size: 42px !important;
     }
 
@@ -2421,7 +2509,7 @@ footer a:hover {
 
     /* Página contacto */
 
-    #title_contact h2 {
+    #title_contact h1 {
         font-size: 46px !important;
     }
 
@@ -2553,7 +2641,7 @@ footer a:hover {
 
     /* Proyectos */
 
-    #title_projects h2 {
+    #title_projects h1 {
         font-size: 60px;
     }
 
@@ -2591,8 +2679,12 @@ footer a:hover {
 
     /* Sobre mí */
 
-    #title_mg h2 {
+    #title_mg h1 {
         font-size: clamp(5rem, 12vw, 10rem);
+    }
+
+    .active_small {
+        display: block;
     }
 
     #block_image {
@@ -2616,7 +2708,7 @@ footer a:hover {
         font-size: 20px;
     }
 
-    #title_curriculum h2, #title_contact h2 {
+    #title_curriculum h1, #title_contact h1 {
         font-size: 11vw;
     }
 
@@ -2676,7 +2768,7 @@ footer a:hover {
         font-size: 46px;
     }
 
-    #title_curriculum h2 {
+    #title_curriculum h1 {
         font-size: 72px !important;
     }
 
@@ -2758,7 +2850,7 @@ footer a:hover {
 
     /* Proyectos */
 
-    #title_projects h2 {
+    #title_projects h1 {
         font-size: 80px;
     }
 }
@@ -2830,6 +2922,10 @@ footer a:hover {
 
     #header_horizons {
         background-position: 60% center;
+    }
+
+    .header_project {
+        padding-top: 130px !important;
     }
 }
 
@@ -2957,7 +3053,7 @@ footer a:hover {
 
     /* Currículum */
 
-    #title_curriculum h2, #title_contact h2 {
+    #title_curriculum h1, #title_contact h1 {
         font-size: 90px;
     }
 }
@@ -2966,7 +3062,7 @@ footer a:hover {
 
     /* Proyectos */
 
-    #title_projects h2 {
+    #title_projects h1 {
         font-size: 100px;
     }
 }
@@ -3026,7 +3122,7 @@ footer a:hover {
 
     /* Proyectos */
 
-    #title_projects h2 {
+    #title_projects h1 {
         font-size: 80px;
     }
 
@@ -3062,6 +3158,12 @@ footer a:hover {
 
     #header_ludofy {
         background-image: url("../media/ludofy_background2.png");
+    }
+
+    /* Proyecto Welcome to Helea */
+
+    #header_wth {
+        background-image: url("../media/wth_background2.png");
     }
 }
 
