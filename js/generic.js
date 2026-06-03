@@ -424,6 +424,7 @@ if(window.location.pathname.includes("new_horizons.html")) {
     const btn_design_thinking = document.getElementById("btn_design_thinking");
     const btn_prototype_figma = document.getElementById("btn_prototype_figma");
     const btn_access_web2 = document.getElementById("btn_access2");
+    const btn_code_github = document.getElementById("btn_code_github");
 
     btn_access_web.addEventListener("click", () => {
         window.open("https://new-horizons.netlify.app/");
@@ -439,6 +440,10 @@ if(window.location.pathname.includes("new_horizons.html")) {
 
     btn_access_web2.addEventListener("click", () => {
         window.open("https://new-horizons.netlify.app/");
+    });
+
+    btn_code_github.addEventListener("click", () => {
+        window.open("https://github.com/miguelgisbert12/new-horizons-restaurant");
     });
 };
 
@@ -600,6 +605,7 @@ if(window.location.pathname.includes("mg.html")) {
 
     const btn_prototype_figma = document.getElementById("btn_prototype_figma");
     const btn_access = document.getElementById("btn_access");
+    const btn_code_github = document.getElementById("btn_code_github");
 
     btn_prototype_figma.addEventListener("click", () => {
         window.open("https://www.figma.com/design/X6g6aMgyiWvaNnUhSc8hBp/Portfolio?node-id=0-1&t=Wn1tmeNL9xbhvpgf-1");
@@ -607,6 +613,10 @@ if(window.location.pathname.includes("mg.html")) {
 
     btn_access.addEventListener("click", () => {
         window.open("https://mgisbert.com");
+    });
+
+    btn_code_github.addEventListener("click", () => {
+        window.open("https://github.com/miguelgisbert12/mgisbert");
     });
 };
 
