@@ -2,6 +2,16 @@
 // JavaScript genérico
 // ---------------------------------------------------------------------------
 
+// Botón del banner de Inicio
+
+const btAnnouncement = document.querySelector("#announcement_banner_btn");
+
+if(btAnnouncement) {
+    btAnnouncement.addEventListener("click", () => {
+        window.location.href = "/pages/projects/welcome_to_helea.html";
+    });
+}
+
 // Hover menu elements (header)
 
 const navLinks = document.querySelectorAll('.nav_link');

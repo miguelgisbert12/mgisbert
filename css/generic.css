@@ -234,6 +234,17 @@ ul, ol {
     display: none;
 }
 
+/* Animaciones CSS */
+
+@keyframes rotateImg {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 /* CSS común en todas las páginas */
 /* ---------------------------------------------------------------------------- */
 
@@ -445,6 +456,56 @@ footer a:hover {
 
 /* CSS página principal */
 /* ---------------------------------------------------------------------------- */
+
+/* Announcement banner */
+
+#announcement_banner {
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 20px;
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 20px 20px 0px 0px;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #c0c0c0;
+}
+
+.announcement_banner_info {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.announcement_banner_icon {
+    width: 70px;
+    height: 70px;
+    position: relative;
+}
+
+.announcement_banner_icon img {
+    width: 100%;
+    animation: rotateImg 20s linear infinite;
+}
+
+#announcement_banner_btn {
+    background: #45FFF6;
+    border: none;
+    border-radius: 999px;
+    padding: 12px 28px;
+    font-weight: 700;
+    transition: background-color .2s ease;
+    cursor: pointer;
+}
+
+#announcement_banner_btn:hover {
+    background: #2ce7df;
+}
 
 /* Carousel principal */
 
