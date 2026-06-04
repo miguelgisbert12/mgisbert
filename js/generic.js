@@ -564,20 +564,10 @@ if(window.location.pathname.includes("visual_studio.html")) {
 
 if(window.location.pathname.includes("ludofy.html")) {
 
-    const btn_access_web = document.getElementById("btn_access");
     const btn_memory = document.getElementById("btn_memory");
-    const btn_access2 = document.getElementById("btn_access2");
-
-    btn_access_web.addEventListener("click", () => {
-        window.open("https://www.ludofy.es/");
-    });
 
     btn_memory.addEventListener("click", () => {
         window.open("https://drive.google.com/file/d/15EQ8AS4JLRekqvLnlbzpqpLld23UFjp4/view?usp=sharing");
-    });
-
-    btn_access2.addEventListener("click", () => {
-        window.open("https://www.ludofy.es/");
     });
 };
 
