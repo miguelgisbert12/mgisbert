@@ -52,15 +52,25 @@ navLinks.forEach(link => {
 // Abrir menú hamburguesa (desplegable)
 
 const menu_hamburguesa = document.querySelector('.hamburguer_menu');
+const menu_hamburguesa_overlay = document.querySelector(".overlay_hamburguer");
 const overlay = document.querySelector(".hamburguer_overlay");
 
 if(menu_hamburguesa) {
     menu_hamburguesa.addEventListener("click", () => {
-        console.log("Abriendo o cerrando menú hamburguesa");
-        overlay.classList.toggle("activo");
-        document.body.classList.toggle("menu_abierto");
+        console.log("Abriendo menú hamburguesa");
+        overlay.classList.add("activo");
+        document.body.classList.add("menu_abierto");   
     });
 };
+
+if(menu_hamburguesa_overlay) {
+    menu_hamburguesa_overlay.addEventListener("click", () => {
+        console.log("Cerrando menú hamburguesa");
+        overlay.classList.remove("activo");
+        document.body.classList.remove("menu_abierto");
+    });
+};
+
 
 // Redirección a la página principal al hacer click en el logo
 

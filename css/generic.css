@@ -218,6 +218,12 @@ ul, ol {
     display: none !important;
 }
 
+.hidden {
+    display: none !important;
+    user-select: none;
+    pointer-events: none;
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -317,7 +323,7 @@ header {
     transition: opacity 0.5s ease;
 }
 
-.logo_linkedin img:hover, .logo_instagram img:hover {
+.logo_linkedin img:hover, .logo_instagram img:hover, .logo_github img:hover {
     opacity: 0.8;
 }
 
@@ -355,7 +361,7 @@ header {
     background: #000;
     clip-path: circle(0% at top right);
     transition: clip-path 0.6s ease-in-out;
-    z-index: 99;
+    z-index: 9999;
     display: flex;
     flex-direction: column;
     gap: 100px;
@@ -392,19 +398,34 @@ body.menu_abierto {
     padding-right: 15px;
 }
 
-.overlay_logo {
-    width: 60px;
+.overlay_logo, .overlay_hamburguer {
     overflow: visible;
-    margin: 23px 0px 0px 32px; 
+    margin: 28px 0px 0px 0px; 
     transition: transform 0.5s ease;
     position: absolute;
-    left: 0;
     top: 0;
     cursor: pointer;
 }
 
+.overlay_logo {
+    width: 60px;
+    left: 0;
+    margin-left: 32px;
+}
+
+.overlay_hamburguer {
+    width: 40px;
+    right: 0;
+    margin-right: 46px;
+    transition: opacity 0.3s ease;
+}
+
 .overlay_logo:hover {
     transform: scale(0.97);
+}
+
+.overlay_hamburguer:hover {
+    opacity: 0.7;
 }
 
 .overlay_social {
